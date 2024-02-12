@@ -1,0 +1,36 @@
+//Output/Variables/Data types and input
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		System.out.println("Hello World");
+		//System.out.println("*\n**\n***\n****");
+		System.out.println("*");
+		System.out.println("**");
+		System.out.println("***");
+		System.out.println("****");
+		
+		//Variables
+		String name ="tony stark";
+		int a=25;
+		int b=10;
+		int age=30;
+		double price= 25.25;
+		//we can change variable name;
+		b=40;
+		name="ironman"; 
+		
+		//Data types
+		int x=10;
+		int y=20;
+		int sum=x+y;
+		System.out.println(sum);
+		int diff=y-x;
+		System.out.println(diff);
+		int mul=x*y;
+		System.out.println(mul);
+		
+		//input
+		
+	}
+}
