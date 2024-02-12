@@ -1,0 +1,137 @@
+//STRINGS
+
+/*import java.util.*;
+public class Main
+{
+	public static void main(String args[]){
+	    //String declaration
+	   //String name="Megha";
+	   
+	    
+	    Scanner sc= new Scanner(System.in);
+	    //String name=sc.next();
+	    String name=sc.nextLine();
+	    System.out.println("Your name is: "+name);
+	}
+}*/
+
+/*import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        //concatenation
+        String firstname="tony";
+        String lastname="stark";
+        String fullname= firstname + " " +lastname;
+        System.out.println("Name: "+fullname);
+        System.out.println("Length of your name: "+fullname.length());
+    
+        //charAt  prints character of strings
+        for(int i=0; i<fullname.length(); i++){
+            System.out.println(fullname.charAt(i));
+        }
+    }
+}
+*/
+
+/*import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        //compare two strings
+        String name1="Megha";
+        String name2="Megha";
+        
+        //checks s1>s2, returns +value
+        //checks s1==s2, returns 0
+        //checks s1<s2, returns -value
+        //if(name1==name2), if we use this, most of the time it fails therefore we use compareTo.
+        //18:52
+        if(name1.compareTo(name2)==0){
+            System.out.println("Strings are equal");
+        }
+        else{
+            System.out.println("Strings are not equal");
+        }
+    }
+}*/
+
+import java.util.*;
+public class Main{
+    public static void main(String args[])
+    {
+        //substring
+         /*String sentence="my name is tony";
+         //substring(beg index, end index(total length-1))
+         String name=sentence.substring(11, sentence.length);
+         System.out.println(name);*/
+         
+         String sen="Tonystark";
+         String name=sen.substring(0,4); //(4):Stark, 4th to end by default is printed
+         System.out.println(name);
+    }
+}
+
+//Strings are immutable in java
+//Check parsing in strings in java
+
+
+
+
+
+
+//String builder
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    StringBuilder sb= new StringBuilder("Tony");
+	    System.out.println(sb);
+	    
+	    //char at index 0
+	    System.out.println(sb.charAt(0));
+	    
+	    //set char at index
+	    //System.out.println(sb.setCharAt(0,'p'));
+	    sb.setCharAt(0,'p');
+	    System.out.println(sb);
+	    
+	    //insert char at the beginning of "pony".
+	    sb.insert(0,'S'); //sb.insert(0, 'n')
+	    System.out.println(sb);
+	    
+	    //delete the extra 'a' 
+	    sb.delete(2,3); //last index is non inclusive
+	    System.out.println(sb);
+	    
+	    sb.append("H"); //str=str+ 'e': here new string is creating as long as we add each character and takes more time as compared to string builder.
+	    sb.append("E");
+	    sb.append("L");
+	    sb.append("L");
+	    sb.append("O");
+	    System.out.println(sb); //changes are made in same string builders.
+	    System.out.println(sb.length());
+	}
+}
+
+
+
+//Reverse a string
+import java.util.*;
+public class Main
+{
+	public static void main(String args[])
+	{
+	    StringBuilder sb=new StringBuilder("Hello");
+	    for(int i=0; i<=sb.length()/2; i++){
+	        int front =i;
+	        int back=sb.length()-1-i; //5-1-0=4
+	        
+	        char frontChar= sb.charAt(front);
+	        char backChar= sb.charAt(back);
+	        
+	        sb.setCharAt(front, backChar);
+	        sb.setCharAt(back, frontChar);
+	    }
+	    System.out.println(sb);
+	} 
+}
