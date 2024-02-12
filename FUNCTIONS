@@ -1,0 +1,276 @@
+//FUNCTIONS
+/*import java.util.*;
+public class Main
+{
+    
+    public static void printMyName(String name){
+        System.out.println(name);
+        return;
+    }
+   
+	public static void main(String args[]) {
+		//System.out.println("Hello World");
+		Scanner sc= new Scanner(System.in);
+		String name = sc.next();
+		printMyName(name);  //calling function in main class
+		
+	}
+}
+*/
+
+//sum of two numbers
+//make a function to multiply 2 numbers andreturn the product.
+
+/*import java.util.*;
+public class Main
+{
+    
+    public static int calculatesum(int a, int b){
+        int sum=a+b;
+        return sum;
+    }
+   
+	public static void main(String args[]) {
+		//System.out.println("Hello World");
+		Scanner sc= new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt(); 
+		int sum=calculatesum(a,b);
+		System.out.println(sum);
+	}
+}*/
+import java.util.*;
+public class Main
+{
+    
+    public static int calculateprod(int a, int b){
+        return a*b;
+    }
+   
+	public static void main(String args[]) {
+		//System.out.println("Hello World");
+		Scanner sc= new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt(); 
+	//	int sum=calculatesum(a,b);
+		System.out.println("product: "+calculateprod(a,b));
+	}
+}
+
+
+
+
+
+
+//FUNCTIONS QUESTIONS
+//Q1 Enter 3 numbers from the user & make a function to print their average.
+/*import java.util.*;
+public class Main
+{
+    public static float avg(float a, float b, float c){
+        float cal=(a+b+c)/3;
+        return cal;
+    }
+    public static  void main(String args[])
+    {
+        System.out.println("Enter the 3 numbers: ");
+        Scanner sc= new Scanner(System.in);
+        float a=sc.nextFloat();
+        float b=sc.nextFloat();
+        float c=sc.nextFloat();
+        float calAvg=avg(a,b,c);
+        System.out.println("Average of entered number is: "+calAvg);
+    }
+
+}*/
+
+//Q2 Write a function to print the sum of all odd numbers from 1 to n.
+/*import java.util.*;
+public class Main{
+    public static int sum_odd(int n){
+        int sum=0;
+        System.out.println("List of Odd numbers: ");
+        for(int i=0;i<=n;i++){
+            if(i%2!=0){
+                System.out.println(i);
+                sum=sum+i;
+            }
+        }
+        return sum;
+        
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of digits: ");
+        int n=sc.nextInt();
+        int sum1=sum_odd(n);
+        System.out.println("Sum of odd numbers are: "+ sum1);
+    }
+}*/
+
+//Q3 Write a function which takes in 2 numbers and returns the greater of those two.
+//Try greatest of 3 integers
+/*import java.util.*;
+public class Main{
+    public static int greater(int x, int y){
+        return(x>y?x:y);
+    }
+    public static void main(String args[]){
+        System.out.println("Enter the two numbers: ");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("The greatest number is: "+greater(a,b));
+    }
+}*/
+
+//Q4 Write a function that takes in the radius as input and returns the circumference of a circle.
+//try with double 
+/*import java.util.*;
+public class Main{
+    public static double circumference(double n){
+        return (2*3.14*n);
+    }
+    public static void main(String args[]){
+        System.out.println("Enter the radius of the circle: ");
+        Scanner sc=new Scanner(System.in);
+        double p=sc.nextFloat();
+        System.out.println("Circumference of the circle is: "+circumference(p));
+    }
+}*/
+
+//Q5 Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote.
+import java.util.*;
+/*public class Main {
+    public static void vote(int n) {
+        if (n > 18) {
+            System.out.println("Person is eligible to vote.");
+        } else {
+            System.out.println("Not eligible to vote.");
+        }
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        vote(x);
+    }
+}*/
+
+/*public class Main{
+    public static boolean vote(int n){
+        return n>18;
+    }
+    public static void main(String args[]){
+        System.out.println("Enter the age of the person: ");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(vote(a))
+            System.out.println("Elgible to vote.");
+        
+        else
+            System.out.println("Not eligible to vote.");
+        
+        
+        
+    }
+}*/
+
+//Q6 Write an infinite loop using do while condition.
+/*import java.util.*;
+public class Main{
+    public static void infiniteLoop(){
+        Scanner sc=new Scanner(System.in);
+        do{
+            System.out.println("This is an infinite loop!");
+        }
+        while(True);
+        
+    }
+    public class static main(String args[]){
+        infiniteLoop();
+    }
+}*/
+
+/*import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        startInfiniteLoop();
+    }
+
+    public static void startInfiniteLoop() {
+        Scanner scanner = new Scanner(System.in);
+        
+        do {
+            System.out.println("This is an infinite loop! Press 'q' to quit.");
+        } while (!scanner.nextLine().equalsIgnoreCase("q"));
+        
+        scanner.close();
+    }
+}*/
+
+//Q7 Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered. 
+import java.util.*;
+public class Main{
+    public static void countNum(int n){
+        
+        int count1=0;
+        int count2=0;
+        int count3=0;
+        for(int i=1; i<=n; i++){
+       if(i>0)
+       {count1++;
+           
+       }
+       else if(n<0){
+           count2++;
+          
+       }
+       else{
+           count3++;
+           
+       }
+        }
+    }
+    public static void main(String args[]){
+        System.out.println("Enter the number of digits: ");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        countNum(a);
+    }
+}
+
+/*import java.util.*;
+
+public class Main {
+    public static void countNum(int n) {
+        System.out.println("Enter the number of digits: ");
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (i > 0) {
+                count1++;
+            } else if (i < 0) {
+                count2++;
+            } else {
+                count3++;
+            }
+        }
+
+        System.out.println("Positive numbers: " + count1);
+        System.out.println("Negative numbers: " + count2);
+        System.out.println("Number of zeroes: " + count3);
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        countNum(a);
+    }
+}*/
+
+
+
