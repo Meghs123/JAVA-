@@ -1,4 +1,7 @@
 //Conditional statement
+
+//WAP to check is a person is adult or not where age>18 is considered as adult.
+//WAP to check if the number is odd or even.
 import java.util.*;
 public class Main
 {
@@ -14,7 +17,7 @@ public class Main
 	if(x%2==0){
 	    System.out.println("Even");
 	}else{
-	    System.out.println("Old");
+	    System.out.println("Odd");
 	}
 	}
 }
@@ -65,7 +68,7 @@ public class Main{
 }
 
 
-
+//Print the greetings
 /*import java.util.*;
 public class Main{
     public static void main(String[] args){
@@ -83,6 +86,8 @@ public class Main{
     }
 }*/
 
+
+//Calculator
 /*import java.util.*;
 public class Main{
     public static void main(String[] args){
@@ -111,6 +116,8 @@ public class Main{
 }
 */
 
+
+//WAP to print month entered by the users choice.
 import java.util.*;
 public class Main{
     public static void main(String[] args){
